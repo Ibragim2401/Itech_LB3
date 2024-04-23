@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <h1><span class="Main_text">My Gallery</span></h1>
+    </header>
+    <div class="gallery">
+        <div class="pics" data-alt="Cont">
+            <img src="Pics/first.jpg" alt="Photo">
+        </div>
+        <div class="pics" data-alt="Cont">
+            <img src="Pics/second.jpg" alt="Photo">
+        </div>
+        <div class="pics" data-alt="Cont">
+            <img src="Pics/third.jpg" alt="Photo">
+        </div>
+    </div>
+    <div class="up_down">
+        <div class="item">
+            <button class="arrow_up" onclick="moveUp()"></button>
+        </div>
+        <div class="item">
+            <button class="arrow_down" onclick="moveDown()"></button>
+        </div>
+    </div>
+    <div class="Form">
+        <form class="imageForm">
+            <label for="width">Ширина:</label>
+            <input type="number" id="width" name="width"><br><br>
+            <label for="height">Висота:</label>
+            <input type="number" id="height" name="height"><br><br>
+            <label for="border">Товщина рамки:</label>
+            <input type="number" id="border" name="border"><br><br>
+            <label for="altText">Альтернативний текст:</label>
+            <input type="text" id="altText" name="altText"><br><br>
+            <button class="but" type="button" onclick="applyChanges()">Застосувати</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
